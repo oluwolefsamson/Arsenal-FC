@@ -138,7 +138,7 @@ export default function Navbar() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-600">
               Welcome to the official website of Arsenal Football Club – the home
-               of the Gunners. Whether you're a die-hard fan or just beginning your
+               of the Gunners. Whether you&apos;re a die-hard fan or just beginning your
                 journey with us, this is your ultimate destination for everything Arsenal.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
