@@ -1,0 +1,24 @@
+.col-right {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    gap: 1rem;
+}
+
+.col-right img {
+    height: 40vh;
+    width: 300px;
+}
+
+@media screen and (max-width:1024px) {
+    .col-right img {
+        height: 20vh;
+        width: 300px;
+    } 
+}
+
+@media screen and (max-width:768px) {
+    .col-right {
+        display: none;
+    }
+}
