@@ -10,6 +10,19 @@
     width: 300px;
 }
 
+.col-right .calender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    gap: 15px;
+    height: 30px;
+}
+
+.col-right .calender span{
+    font-size: x-small;
+}
+
 @media screen and (max-width:1024px) {
     .col-right img {
         height: 20vh;
