@@ -14,8 +14,8 @@ import {
 const images = [
   { id: 1, src: "./invisible1.jpg" },
   { id: 2, src: "./invisible2.jpg" },
-  { id: 3, src: "./invisible4.jpg" },
-  { id: 4, src: "./invisible3.jpg" },
+  { id: 3, src: "./invisible10.jpg" },
+  { id: 4, src: "./invisible4.jpg" },
   { id: 5, src: "./invisible5.jpg" },
   { id: 6, src: "./invisible6.jpg" },
   { id: 7, src: "./invisible7.jpg" },
