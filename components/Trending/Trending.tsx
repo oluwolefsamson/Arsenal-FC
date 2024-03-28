@@ -39,45 +39,48 @@ export function Trending() {
 
   return (
     <div className="trending-con">
-      <div className="flex-content">
-        <TrendingBox />
-        <ColumnRight />
-      </div>
+      <div className="trending-wrapper">
+        <div className="flex-content">
+          <TrendingBox />
+          <ColumnRight />
+        </div>
 
-      <div className="carocon">
-        <Carousel
-          plugins={[plugin.current]}
-          className="carousel w-full max-w-xs"
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
-        >
-          <CarouselContent>
-            {images.map((image) => (
-              <CarouselItem key={image.id}>
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <img
-                        src={image.src}
-                        alt={`Image ${image.id}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <div className="carocon">
+          <Carousel
+            plugins={[plugin.current]}
+            className="carousel w-full max-w-xs"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+          >
+            <CarouselContent>
+              {images.map((image) => (
+                <CarouselItem key={image.id}>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-4">
+                        <img
+                          src={image.src}
+                          alt={`Image ${image.id}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
 
-        <div className="contents">
-          <h3>GALLERY</h3>
-          <span>Gallery : Build up to Manchester city game begins.</span>
-          <span>Take a look at our first-team squad in training as they prepare for our-top-of-the-table clash against manchester city.</span>
+          <div className="contents">
+            <h3>GALLERY</h3>
+            <span>Gallery : Build up to Manchester city game begins.</span>
+            <span>Take a look at our first-team squad in training as they prepare for our-top-of-the-table clash against manchester city.</span>
+          </div>
         </div>
       </div>
+     
       < CardGroup />
       < TrendingMore />
       < TrendingVideo />

@@ -28,15 +28,15 @@ const images = [
 
 export function InvisibleCarousel() {
   return (
-    <section className="trendingvideo-con">
+    <section className="invisiblecarousel-con">
       <Carousel className="w-full max-w-screen-xs mx-auto">
         <CarouselContent className="-ml-4">
           {/* Using mapping instead of Array.from */}
           {images.map((image, index) => (
             <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-              <div className="p-2">
+              <div className="p-1">
                 <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-8">
+                  <CardContent className="flex aspect-square items-center justify-center p-4">
                     <img
                       src={image.src}
                       alt={`Image ${image.id}`}

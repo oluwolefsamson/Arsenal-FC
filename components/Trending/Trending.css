@@ -3,6 +3,7 @@
     border-top: 5px solid red;
 }
 
+
 .flex-content {
     display: flex;
     flex-direction: row;
@@ -65,6 +66,10 @@
 
 
 @media screen and (max-width:425px) {
+
+    .carocon .contents {
+        margin-top: -2rem;
+    }
 
     .trending-con .carocon {
         margin-left: 2rem;

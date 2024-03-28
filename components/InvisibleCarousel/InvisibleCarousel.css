@@ -1,12 +1,18 @@
-.trendingvideo-con {
-    padding:1rem 4rem;
+.invisiblecarousel-con {
+    padding: 1rem 4rem;
 }
 
-.trendingvideo-con img {
+.invisiblecarousel-con img {
     filter: grayscale(0%);
     transition: filter 0.5s;
 }
 
-.trendingvideo-con img:hover { 
+.invisiblecarousel-con img:hover { 
     filter: grayscale(100%);
+}
+
+@media screen and (max-width:425px) {
+    .invisiblecarousel-con {
+        padding: 1rem 2rem;
+    }
 }
