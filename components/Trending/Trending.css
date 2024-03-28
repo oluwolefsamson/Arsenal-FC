@@ -77,10 +77,11 @@
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:375px) {
 
     .trending-con .carocon {
-        margin-left: 2rem;
+        margin-left: 2.2rem;
+        width: 75%;
     }
 
     .carocon .contents {
