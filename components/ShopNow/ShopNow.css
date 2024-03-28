@@ -1,0 +1,23 @@
+.shopnow-con {
+    margin-top: 2rem;
+    margin-left: 1;
+}
+
+.shopnow-con h2 {
+    color: gray;
+}
+
+.shopnow-con img {
+    border-top: 3px solid red;
+}
+
+
+@media screen and (max-width:425px) {
+    .shopnow-con {
+        padding: 2rem;
+    }
+
+    .shopnow-con h2 {
+        text-align: center;
+    }
+}

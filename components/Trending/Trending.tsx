@@ -17,6 +17,9 @@ import ColumnRight from "../ColumnRight/ColumnRight";
 import CardGroup from "../CardGroup/CardGroup";
 import TrendingMore from "../TrendingMore/TrendingMore";
 import TrendingVideo  from "../TrendingVideo/TrendingVideo";
+import ShopNow from "../ShopNow/ShopNow";
+import InvisibleBox from "../InvisibleBox/InvisibleBox";
+import { InvisibleCarousel } from "../InvisibleCarousel/InvisibleCarousel";
 
 
 export function Trending() {
@@ -78,6 +81,9 @@ export function Trending() {
       < CardGroup />
       < TrendingMore />
       < TrendingVideo />
+      < ShopNow />
+      < InvisibleBox />
+      < InvisibleCarousel />
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.trendingvideo-con {
+    padding:1rem 4rem;
+}
+
+.trendingvideo-con img {
+    filter: grayscale(0%);
+    transition: filter 0.5s;
+}
+
+.trendingvideo-con img:hover { 
+    filter: grayscale(100%);
+}

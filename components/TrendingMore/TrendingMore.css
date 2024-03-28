@@ -52,13 +52,19 @@
     .trendingmore-con {
         width: 100%;
     }
+
+    .trendingmore-con::before,
+    .trendingmore-con::after {
+        width: 200px; /* Width of the border */
+        top: 25px;
+}
 }
 
 @media screen and (max-width:425px)  {
 
     .trendingmore-con::before,
     .trendingmore-con::after {
-        width: 70px; /* Width of the border */
+        width: 60px; /* Width of the border */
         top: 15px;
 }
 
