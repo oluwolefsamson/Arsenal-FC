@@ -15,6 +15,8 @@ import './Trending.css';
 import TrendingBox from "../TrendingBox/TrendingBox";
 import ColumnRight from "../ColumnRight/ColumnRight";
 import CardGroup from "../CardGroup/CardGroup";
+import TrendingMore from "../TrendingMore/TrendingMore";
+import TrendingVideo  from "../TrendingVideo/TrendingVideo";
 
 
 export function Trending() {
@@ -74,6 +76,8 @@ export function Trending() {
         </div>
       </div>
       < CardGroup />
+      < TrendingMore />
+      < TrendingVideo />
     </div>
   );
 }

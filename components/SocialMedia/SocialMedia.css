@@ -1,0 +1,35 @@
+.socialmedia-con {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socialmedia-con .header h2 {
+    color: gray;
+    font-weight: 800;
+    border-bottom: 3px grey solid;
+    width: 150px;
+    font-size: 25px;
+}
+
+.socialmedia-con .icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.icons span {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icons span:hover {
+    background-color: red;
+}

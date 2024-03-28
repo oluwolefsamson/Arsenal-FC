@@ -1,6 +1,7 @@
 import React from 'react'
 import './ColumnRight.css'
 import { GoDownload } from "react-icons/go";
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 const ColumnRight = () => {
   return (
@@ -10,6 +11,9 @@ const ColumnRight = () => {
       <div className='calender'>
         <span>SYNC FIXTURES TO CALENDAR</span><GoDownload size={12}/>
       </div>
+      <img src='./raya.jpg' alt='raya' />
+      <img src='./henry.jpg' alt='raya' />
+      < SocialMedia />
     </div>
   )
 }

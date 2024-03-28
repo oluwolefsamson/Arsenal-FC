@@ -1,5 +1,6 @@
 .trending-con {
     padding: 1rem;
+    border-top: 5px solid red;
 }
 
 .flex-content {
@@ -11,10 +12,12 @@
 
 .trending-con .carocon {
     display: flex;
-    margin-top: -27rem;
+    margin-top: -76rem;
     margin-left: 4rem;
     gap: 4rem;
     align-items: center;
+    border-top: 5px solid red;
+    width: 71%;
 }
 
 .carocon .contents {
@@ -40,7 +43,8 @@
 
 @media screen and (max-width:1024px) {
     .trending-con .carocon {
-        margin-top: -20rem;
+        margin-top: -65rem;
+        
     }
 
     .carocon {
@@ -53,6 +57,7 @@
         margin-top: 0rem;
         margin-left: 3rem;
         margin-top: 1rem;
+        width: 91%;
     }
 }
 
@@ -62,12 +67,20 @@
 @media screen and (max-width:425px) {
 
     .trending-con .carocon {
-        margin-left: 2.2rem;
-    }
-
-    .carocon {
+        margin-left: 2rem;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .carocon .contents {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .trending-con .carocon {
+        margin-left: 2rem;
     }
 
     .carocon .contents {

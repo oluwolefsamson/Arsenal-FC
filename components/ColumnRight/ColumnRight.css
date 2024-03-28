@@ -8,6 +8,7 @@
 .col-right img {
     height: 40vh;
     width: 300px;
+    border-top: 4px solid red;
 }
 
 .col-right .calender {

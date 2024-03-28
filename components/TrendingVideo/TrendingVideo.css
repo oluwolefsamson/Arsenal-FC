@@ -1,0 +1,64 @@
+.video-wrapper {
+    width: 80%;
+}
+
+.video-wrapper h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: gray;
+}
+
+.video-con {
+    color: rgb(54, 52, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.video-card {
+    
+    width: 250px;
+    background-color: #f9f9f9;
+    
+}
+
+.video-card .video {
+    border-top: 2px red solid;
+}
+
+.video-description {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.video-description:hover {
+    color: red;
+}
+
+@media screen and (max-width:1024px) {
+    .video-wrapper {
+        width: 100%;
+    }
+    .video-wrapper h2 {
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .video-wrapper h2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .video-wrapper h2 {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
