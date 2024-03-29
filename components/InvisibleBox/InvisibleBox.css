@@ -3,10 +3,13 @@
     align-items: center;
     background-color: red;
     height: 10vh;
+    margin: 1rem;
+}
+
+.box span {
     font-size: 35px;
     padding: 5px 10px;
     font-weight: 800;
-    margin: 1rem;
 }
 
 .box:hover {
@@ -14,7 +17,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .box {
+    .box span{
         font-size: 20px;
     }
 }
@@ -22,8 +25,10 @@
     .box {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;   
+    }
+
+    .box span {
         font-size: 15px;
-       
     }
 }

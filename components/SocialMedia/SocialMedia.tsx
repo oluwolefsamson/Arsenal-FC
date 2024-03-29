@@ -15,12 +15,12 @@ const SocialMedia = () => {
         </div>
 
         <div className='icons'>
-            <span><FaFacebook size={30}/></span>
-            <span><FaXTwitter size={30}/></span>
-            <span><FaLinkedin size={30}/></span>
-            <span><FaTiktok size={30}/></span>
-            <span><IoLogoYoutube size={30}/></span>
-            <span><FaSnapchat size={30}/></span>
+            <span><FaFacebook size={20}/></span>
+            <span><FaXTwitter size={20}/></span>
+            <span><FaLinkedin size={20}/></span>
+            <span><FaTiktok size={20}/></span>
+            <span><IoLogoYoutube size={20}/></span>
+            <span><FaSnapchat size={20}/></span>
         </div>
     </section>
   )

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ModeToggle } from '../ToggleTheme'
+import './Navbar.css'
 
 
 const navigation = [
@@ -21,7 +22,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="">
+    <div className="navbar-con">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -46,7 +47,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12 " >
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white-900 hover:text-red-500">
+              <a key={item.name} href={item.href} className="nav-text text-sm font-semibold leading-6 text-white-900 hover:text-red-500">
                 {item.name.toUpperCase()}
               </a>
             ))}
@@ -123,13 +124,6 @@ export default function Navbar() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-26">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div> */}
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-900 sm:text-6xl">

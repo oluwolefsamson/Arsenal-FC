@@ -4,7 +4,7 @@ import './InvisibleBox.css'
 const InvisibleBox = () => {
   return (
     <section className="box">
-        CELEBRATING 20 YEARS OF INVISIBLES
+        <span>CELEBRATING 20 YEARS OF INVISIBLES</span>
     </section>
   )
 }

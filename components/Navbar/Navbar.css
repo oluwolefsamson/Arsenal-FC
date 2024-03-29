@@ -1,0 +1,19 @@
+.nav-text {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px; /* Border height */
+    background-color: red; /* Border color */
+    transition: width 0.3s ease; /* Transition effect for width */
+}
+
+.nav-text:hover::before {
+    width: 100%; /* Expand width to 100% on hover */
+}

@@ -1,0 +1,94 @@
+
+.flex-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.trending-con .carocon {
+    display: flex;
+    margin-top: -76rem;
+    margin-left: 4rem;
+    gap: 4rem;
+    align-items: center;
+    border-top: 5px solid red;
+    width: 71%;
+}
+
+.carocon .contents {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: gray;
+    gap: 1rem;
+}
+
+.carocon .contents h3 {
+    color: gray;
+}
+
+.contents span:nth-child(2) {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contents span:nth-child(2):hover {
+    color: red;
+}
+
+@media screen and (max-width:1024px) {
+    .trending-con .carocon {
+        margin-top: -65rem;
+        
+    }
+
+    .carocon {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .trending-con .carocon {
+        margin-top: 0rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        width: 91%;
+    }
+}
+
+
+
+
+@media screen and (max-width:425px) {
+
+    .carocon .contents {
+        margin-top: -2rem;
+    }
+
+    .trending-con .carocon {
+        margin-left: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carocon .contents {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .trending-con .carocon {
+        margin-left: 2.2rem;
+        width: 75%;
+    }
+
+    .carocon .contents {
+        width: 100%;
+    }
+}
+
+
+
+    
