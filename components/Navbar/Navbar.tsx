@@ -1,10 +1,13 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ModeToggle } from '../ToggleTheme'
-import './Navbar.css'
+import './Navbar.css';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import AOS from 'aos';
+
 
 
 const navigation = [
@@ -19,6 +22,11 @@ const navigation = [
 ]
 
 export default function Navbar() {
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -126,10 +134,14 @@ export default function Navbar() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-900 sm:text-6xl">
+            <h1
+            data-aos="flip-right"    
+            className="text-4xl font-bold tracking-tight text-900 sm:text-6xl">
              Welcome to the Arsenal Footbal Club
             </h1>
-            <p className="mt-6 text-lg leading-8 text-600">
+            <p
+              data-aos="flip-up"
+            className="mt-6 text-lg leading-8 text-600">
               Welcome to the official website of Arsenal Football Club – the home
                of the Gunners. Whether you&apos;re a die-hard fan or just beginning your
                 journey with us, this is your ultimate destination for everything Arsenal.
